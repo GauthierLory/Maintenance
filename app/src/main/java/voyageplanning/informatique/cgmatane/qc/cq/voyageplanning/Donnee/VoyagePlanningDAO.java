@@ -76,6 +76,11 @@ public class VoyagePlanningDAO
         }
     }
 
+    public void supprimerVoyagePlanning(VoyagePlanning voyagePlanning)
+    {
+        listeVoyagesPlanning.remove(voyagePlanning);
+    }
+
     public void ajouterVoyagePlanning (VoyagePlanning voyagePlanning)
     {
         listeVoyagesPlanning.add(voyagePlanning);

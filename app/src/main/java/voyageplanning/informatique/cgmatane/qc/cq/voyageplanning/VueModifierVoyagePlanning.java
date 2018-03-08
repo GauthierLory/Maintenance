@@ -16,6 +16,7 @@ public class VueModifierVoyagePlanning extends AppCompatActivity {
     protected VoyagePlanning voyageplanning;
     protected Button modifier;
     protected Button annuler;
+    protected Button supprimer;
     protected EditText champDestination;
     protected EditText champCompagnie;
     protected EditText champDate;
@@ -29,6 +30,7 @@ public class VueModifierVoyagePlanning extends AppCompatActivity {
 
         modifier = (Button) findViewById(R.id.vue_modifier_bouton_modifier);
         annuler = (Button) findViewById(R.id.vue_modifier_bouton_annuler);
+        supprimer = (Button) findViewById(R.id.vue_modifier_bouton_supprimer);
         champDestination = (EditText) findViewById(R.id.vue_modifier_destination);
         champCompagnie = (EditText) findViewById(R.id.vue_ajouter_compagnie);
         champDate = (EditText) findViewById(R.id.vue_modifier_date);
@@ -64,6 +66,19 @@ public class VueModifierVoyagePlanning extends AppCompatActivity {
                 naviguerRetourVoyagePlanning();
             }
         });
+
+        supprimer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                supprimerVoyagePlanning();
+                naviguerRetourVoyagePlanning();
+            }
+        });
+    }
+
+    public  void supprimerVoyagePlanning()
+    {
+        accesseurVoyagePlanning.supprimerVoyagePlanning(voyageplanning);
     }
 
     public void modifierVoyagePlanning() {
