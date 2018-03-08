@@ -13,21 +13,20 @@ public class VoyagePlanning
         protected String compagnie;
         protected String date;
         protected String heure;
-        protected String transport;
         protected String description;
 
     public  VoyagePlanning(){
 
     }
 
-    public VoyagePlanning(int id, String destination, String compagnie, String date, String heure)
+    public VoyagePlanning(int id, String destination, String compagnie, String date, String heure, String description)
     {
         this.id = id;
         this.destination = destination;
         this.compagnie = compagnie;
         this.date = date;
         this.heure = heure;
-
+        this.description = description;
     }
 
     public int getId() {
@@ -70,13 +69,13 @@ public class VoyagePlanning
         this.heure = heure;
     }
 
-    public String getTransport() { return transport; }
+    public String getDescription() {
+        return description;
+    }
 
-    public void setTransport(String transport) { this.transport = transport; }
-
-    public String getDescription() { return description; }
-
-    public void setDescription(String description) { this.description = description; }
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public HashMap<String,String> exporterHashMap()
     {
@@ -86,7 +85,6 @@ public class VoyagePlanning
         voyagePlanning.put("compagnie", this.compagnie);
         voyagePlanning.put("date", this.date);
         voyagePlanning.put("heure", this.heure);
-        voyagePlanning.put("transport", this.transport);
         voyagePlanning.put("description", this.description);
 
         return voyagePlanning;

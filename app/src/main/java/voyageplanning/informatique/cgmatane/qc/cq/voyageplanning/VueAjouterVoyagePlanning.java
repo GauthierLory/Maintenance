@@ -16,7 +16,7 @@ public class VueAjouterVoyagePlanning extends AppCompatActivity {
     protected Button modifier;
     protected Button annuler;
     protected EditText champDestination;
-    protected EditText champTransport;
+    protected EditText champCompagnie;
     protected EditText champDate;
     protected EditText champHeure;
     protected EditText champDescription;
@@ -30,7 +30,7 @@ public class VueAjouterVoyagePlanning extends AppCompatActivity {
         modifier = (Button) findViewById(R.id.vue_ajouter_bouton_modifier);
         annuler = (Button) findViewById(R.id.vue_ajouter_bouton_annuler);
         champDestination = (EditText) findViewById(R.id.vue_ajouter_destination);
-        champTransport = (EditText) findViewById(R.id.vue_ajouter_transport);
+        champCompagnie = (EditText) findViewById(R.id.vue_ajouter_compagnie);
         champDate = (EditText) findViewById(R.id.vue_ajouter_date);
         champHeure = (EditText) findViewById(R.id.vue_ajouter_heure);
         champDescription = (EditText) findViewById(R.id.vue_ajouter_description);
@@ -60,13 +60,13 @@ public class VueAjouterVoyagePlanning extends AppCompatActivity {
         voyageplanning = new VoyagePlanning();
 
         String destination = champDestination.getText().toString();
-        String transport = champTransport.getText().toString();
+        String compagnie = champCompagnie.getText().toString();
         String date = champDate.getText().toString();
         String heure = champHeure.getText().toString();
         String description = champDescription.getText().toString();
 
         voyageplanning.setDestination(destination);
-        voyageplanning.setCompagnie(transport);
+        voyageplanning.setCompagnie(compagnie);
         voyageplanning.setDate(date);
         voyageplanning.setHeure(heure);
         voyageplanning.setDescription(description);

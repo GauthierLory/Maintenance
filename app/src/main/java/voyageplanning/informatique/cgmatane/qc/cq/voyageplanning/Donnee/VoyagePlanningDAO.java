@@ -18,13 +18,13 @@ public class VoyagePlanningDAO
     {
         listeVoyagesPlanning = new ArrayList<VoyagePlanning>();
         VoyagePlanning voyagePlanning;
-        voyagePlanning = new VoyagePlanning(1, "Voyage aux U.S", "Compagnie Air Transat", "15/07/2018", "8h00");
+        voyagePlanning = new VoyagePlanning(1, "Voyage aux U.S", "Compagnie Air Transat", "15/07/2018", "8h00", "voyage avec les parents");
         listeVoyagesPlanning.add(voyagePlanning);
-        voyagePlanning = new VoyagePlanning(2, "Voyage en Inde", "Compagnie Air India", " 15/07/2019", " 8h00");
+        voyagePlanning = new VoyagePlanning(2, "Voyage en Inde", "Compagnie Air India", " 15/07/2019", " 8h00", "voyage avec les parents");
         listeVoyagesPlanning.add(voyagePlanning);
-        voyagePlanning = new VoyagePlanning(3, "Voyage en Irlande","Compagnie Air Island", " 15/07/2020", " 8h00");
+        voyagePlanning = new VoyagePlanning(3, "Voyage en Irlande","Compagnie Air Island", " 15/07/2020", " 8h00", "voyage avec les parents");
         listeVoyagesPlanning.add(voyagePlanning);
-        voyagePlanning = new VoyagePlanning(4, "Voyage à Singapur","Compagnie Singapore Airline", " 15/07/2021", " 8h00");
+        voyagePlanning = new VoyagePlanning(4, "Voyage à Singapur","Compagnie Singapore Airline", " 15/07/2021", " 8h00","voyage avec les parents" );
         listeVoyagesPlanning.add(voyagePlanning);
     }
 
@@ -67,7 +67,7 @@ public class VoyagePlanningDAO
             if (voyagePlanningTest.getId() == voyagePlanning.getId())
             {
                 voyagePlanningTest.setDestination(voyagePlanning.getDestination());
-                voyagePlanningTest.setTransport(voyagePlanning.getTransport());
+                voyagePlanningTest.setCompagnie(voyagePlanning.getCompagnie());
                 voyagePlanningTest.setDate(voyagePlanning.getDate());
                 voyagePlanningTest.setHeure(voyagePlanning.getHeure());
                 voyagePlanningTest.setDescription(voyagePlanning.getDescription());

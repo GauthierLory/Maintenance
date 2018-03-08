@@ -45,7 +45,6 @@ public class VueVoyagePlanning extends AppCompatActivity {
         vueListeVoyagesPlanning = (ListView)findViewById(R.id.vue_planning);
         vueListeVoyagesPlanning.setOnItemClickListener(new AdapterView.OnItemClickListener()
 
-
         {
             @Override
             public void onItemClick(AdapterView<?> parent, View vue, int positionDansAdapteur, long positionItem)

@@ -15,9 +15,9 @@
         android:hint="Heure"
         android:inputType="textPersonName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@+id/vue_ajouter_transport"
-        app:layout_constraintRight_toRightOf="@+id/vue_ajouter_transport"
-        app:layout_constraintTop_toBottomOf="@+id/vue_ajouter_transport"
+        app:layout_constraintLeft_toLeftOf="@+id/vue_ajouter_compagnie"
+        app:layout_constraintRight_toRightOf="@+id/vue_ajouter_compagnie"
+        app:layout_constraintTop_toBottomOf="@+id/vue_ajouter_compagnie"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
@@ -31,9 +31,9 @@
         android:hint="Description"
         android:inputType="textPersonName"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="@+id/vue_ajouter_transport"
-        app:layout_constraintRight_toRightOf="@+id/vue_ajouter_transport"
-        app:layout_constraintTop_toBottomOf="@+id/vue_ajouter_transport"
+        app:layout_constraintLeft_toLeftOf="@+id/vue_ajouter_compagnie"
+        app:layout_constraintRight_toRightOf="@+id/vue_ajouter_compagnie"
+        app:layout_constraintTop_toBottomOf="@+id/vue_ajouter_compagnie"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
@@ -56,7 +56,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <EditText
-        android:id="@+id/vue_ajouter_transport"
+        android:id="@+id/vue_ajouter_compagnie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -106,9 +106,9 @@
         android:ems="10"
         android:hint="Date"
         android:inputType="textPersonName"
-        app:layout_constraintLeft_toLeftOf="@+id/vue_ajouter_transport"
-        app:layout_constraintRight_toRightOf="@+id/vue_ajouter_transport"
-        app:layout_constraintTop_toBottomOf="@+id/vue_ajouter_transport"
+        app:layout_constraintLeft_toLeftOf="@+id/vue_ajouter_compagnie"
+        app:layout_constraintRight_toRightOf="@+id/vue_ajouter_compagnie"
+        app:layout_constraintTop_toBottomOf="@+id/vue_ajouter_compagnie"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
